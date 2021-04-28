@@ -25,17 +25,29 @@ Have fun!
 const emails = ["tijani@gmail.com", "nico@gmail.com", 'lars@gmail.com', "rico@gmail.com", "james@gmail.com" ]
 
 
+ 
+
+let emailMatch = false
+
+function emailChecker () {
  let userEmail = prompt("What is your email?")
-
-
-
-
- if(emails.includes(userEmail) === true) {
-  console.log("Welcome to the email checker")
- } else {
-  
-  userEmail = prompt("Sorry but thats the wrong email. Please type in your email again:")
+ for (email of emails) {
+  if(email === userEmail){
+   emailMatch = true
+   break
+  } 
  }
+ 
+  if(emailMatch === true) {
+   console.log("Welcome to the email checker")
+   
+  } else {
+   console.log('You are not in the system')
+   emailChecker()
+  
+  }
+}
 
-  console.log(userEmail)
- console.log(emails)
+emailChecker()
+// console.log(emailChecker())
+
