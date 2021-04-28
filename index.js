@@ -24,9 +24,6 @@ Have fun!
 
 const emails = ["tijani@gmail.com", "nico@gmail.com", 'lars@gmail.com', "rico@gmail.com", "james@gmail.com" ]
 
-
- 
-
 let emailMatch = false
 
 function emailChecker () {
@@ -49,5 +46,5 @@ function emailChecker () {
 }
 
 emailChecker()
-// console.log(emailChecker())
+
 
